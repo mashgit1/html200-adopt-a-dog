@@ -37,7 +37,7 @@
     font-size: 24px;
     color: #203354
   }
-  h3 {
+  h3, label {
     font-family: 'Arial Bold', sans-serif;
     font-size: 17px;
     color: #203354
@@ -143,3 +143,39 @@
 			border: 1px solid #a1da05;
 			padding: 10px 30px;
 		}
+    button, input, select, textarea, fieldset {
+      font-family: inherit;
+      font-size: 100%;
+      margin: 1rem;
+      width: 30%;
+      padding: 1.5em;
+      display: flex;
+      justify-content: center;
+    }
+    
+    input[type=submit] {
+      width: 30%;
+      color: white;
+			background-color: #a1da05;
+			font-size: 19px;
+			border: 1px solid #a1da05;
+      display: flex;
+    }
+    input[type=text]:focus{
+      outline: none;
+      width: 30%;
+      padding: 10px 30px;
+    }
+    input[type=email]:focus{ 
+      outline: none;
+      width: 30%;
+      padding: 10px 30px;
+    }
+    input {
+        border-radius: 15px;
+        width: 30%;
+        padding: 10px 30px;
+    }
+    
+   
+    
