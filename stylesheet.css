@@ -1,6 +1,6 @@
 .hidden{
   position: relative;
-  left: -10000px;
+  left: -10000%;
   top: auto;
 }
 .hidden:focus {
@@ -34,24 +34,21 @@
   }
   h2 {
     font-family: 'Arial Bold', sans-serif;
-    font-size: 24px;
     color: #203354
   }
   h3, label {
     font-family: 'Arial Bold', sans-serif;
-    font-size: 17px;
     color: #203354
   }
   body {
     font-family: 'Arial Regular', sans-serif;
-    font-size: 17px;
   }
   .intro-box{
     justify-content: space-between;
   }
   .grid-intro {
     display: grid;
-    grid-gap: 10px 10px;
+    grid-gap: 1em 1em;
   }
   .grid-intro-item-1 {
     grid-column: 1;
@@ -70,7 +67,7 @@
   }
   .grid-container {
     display: grid;
-    grid-gap: 20px 70px;
+    grid-gap: 1em 5em;
   }
   .grid-item-1 {
     grid-column: 1;
@@ -113,10 +110,9 @@
 	.button-dogs {
 			color: #203354;
 			background-color: #e7e7e7;
-			font-size: 19px;
 			border: 1px solid #e7e7e7;
-			padding: 15px 50px; 
-      width: 200px;
+			padding: 1em 3em; 
+      width: 15%;
       position: relative;
       display: flex;
       justify-content: center;
@@ -128,18 +124,16 @@
     .button-adopt {
 			color: white;
 			background-color: #a1da05;
-			font-size: 19px;
-			border: 1px solid #a1da05;
-			padding: 10px 50px;
+			border: solid #a1da05;
+			padding: .5em 3em;
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 100px;
+      width: 45%;
 		}
     .button-checkout {
 			color: white;
 			background-color: #a1da05;
-			font-size: 15px;
 			border: 1px solid #a1da05;
 			padding: 10px 30px;
 		}
@@ -157,7 +151,6 @@
       width: 30%;
       color: white;
 			background-color: #a1da05;
-			font-size: 19px;
 			border: 1px solid #a1da05;
       display: flex;
     }
