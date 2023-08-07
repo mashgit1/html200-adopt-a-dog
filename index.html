@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Adopt A Dog</title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
   <body>
@@ -11,14 +12,14 @@
     <header>
         <article class="head-box">
           <div class="flexbox-checkout">
-            <img src="images/cart-icon.svg" width="30" alt="Cart checkout icon">
+            <img class="cart-icon" src="images/cart-icon.svg" alt="Cart checkout icon">
             <a class= "button-checkout" href="checkout.html">Checkout</a>  
           </div>
-            <img src="images/adoptadog-logo.svg" width="300" alt="Adopt a Dog logo with white dog on left">
+            <img class="logo" src="images/adoptadog-logo.svg" alt="Adopt a Dog logo with white dog on left">
             <h1><i>Seattle's premiere dog adoption agency</i></h1>
         </article>
         <nav class="nav-box">
-            <a class= "nav-links" href="home.html">Home</a> /
+            <a class= "nav-links" href="index.html">Home</a> /
             <a class= "nav-links" href="dogs.html">Dogs</a> /
             <a class= "nav-links" href="blog.html">Blog</a> 
         </nav>
@@ -29,7 +30,7 @@
         <article class="intro-box">
             <div class="grid-intro">
             <div class="grid-intro-item-1">
-                <img src="images/home-intro.jpg" width="300" alt="Man and dog in embrace">
+                <img class="blog-image" src="images/home-intro.jpg" alt="Man and dog in embrace">
             </div>
             <div class="grid-intro-item-2">
                 <h2>Adopt a Dog</h2>
@@ -39,41 +40,41 @@
             </div>
         </article>
 
-      <article class="instruct-box">
+      <article>
       <div class="grid-container">
         <div class="grid-item-1">
-          <img src="images/murphy-card.jpg" width="200" alt="Dog">
-          <h3>Murphy</h3> <p>Cost to Adopt: $123.45</p> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> <a class= "button-adopt" href="checkout.html">Adopt</a>   
+          <img class="dogs-width" src="images/murphy-card.jpg" alt="Dog" onclick="showDogInfo('Murphy', 'Breed', '$123.45')">
+          <h3>Murphy</h3> <p>Cost to Adopt: $123.45</p> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> <button class= "button-adopt" id="dog1" data-cost="123.45">Adopt</button>   
         </div>
           <div class="grid-item-2">
-          <img src="images/poppy-card.jpg" width="200" alt="Dog">
-          <h3>Poppy</h3> <p>Cost to Adopt: $123.45</p> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> <a class= "button-adopt" href="checkout.html">Adopt</a>  
+          <img class="dogs-width" src="images/poppy-card.jpg" alt="Dog" onclick="showDogInfo('Poppy', 'Breed', '$123.45')">
+          <h3>Poppy</h3> <p>Cost to Adopt: $123.45</p> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> <button class= "button-adopt" id="dog2" data-cost="123.45">Adopt</button>  
         </div>
         <div class="grid-item-3">
-          <img src="images/jack-card.jpg" width="200" alt="Dog">
-          <h3>Jack</h3> <p>Cost to Adopt: $123.45</p> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> <a class= "button-adopt" href="checkout.html">Adopt</a>  
+          <img class="dogs-width" src="images/jack-card.jpg" alt="Dog" onclick="showDogInfo('Jack', 'Breed', '$123.45')">
+          <h3>Jack</h3> <p>Cost to Adopt: $123.45</p> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> <button class= "button-adopt" id="dog3" data-cost="123.45">Adopt</button>  
         </div>
         <div class="grid-item-4">
-            <img src="images/duffy-card.jpg" width="200" alt="Dog">
-            <h3>Duffy</h3> <p>Cost to Adopt: $123.45</p> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> <a class= "button-adopt" href="checkout.html">Adopt</a>  
+            <img class="dogs-width" src="images/duffy-card.jpg" alt="Dog" onclick="showDogInfo('Duffy', 'Breed', '$123.45')">
+            <h3>Duffy</h3> <p>Cost to Adopt: $123.45</p> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> <button class= "button-adopt" id="dog4" data-cost="123.45">Adopt</button>  
           </div>
       </div>
       <div class="grid-container">
         <div class="grid-item-1">
-          <img src="images/lucas-card.jpg" width="200" alt="Dog">
-          <h3>Lucas</h3> <p>Cost to Adopt: $123.45</p> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> <a class= "button-adopt" href="checkout.html">Adopt</a>       
+          <img class="dogs-width" src="images/lucas-card.jpg"  alt="Dog" onclick="showDogInfo('Lucas', 'Breed', '$123.45')"> 
+          <h3>Lucas</h3> <p>Cost to Adopt: $123.45</p> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> <button class= "button-adopt" id="dog5" data-cost="123.45">Adopt</button>       
         </div>
           <div class="grid-item-2">
-          <img src="images/jake-card.jpg" width="200" alt="Dog">
-          <h3>Jake</h3> <p>Cost to Adopt: $123.45</p> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> <a class= "button-adopt" href="checkout.html">Adopt</a>  
+          <img class="dogs-width" src="images/jake-card.jpg" alt="Dog" onclick="showDogInfo('Jake', 'Breed', '$123.45')">
+          <h3>Jake</h3> <p>Cost to Adopt: $123.45</p> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> <button class= "button-adopt" id="dog6" data-cost="123.45">Adopt</button>  
         </div>
         <div class="grid-item-3">
-          <img src="images/angus-card.jpg" width="200" alt="Dog">
-          <h3>Angus</h3> <p>Cost to Adopt: $123.45</p> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> <a class= "button-adopt" href="checkout.html">Adopt</a>  
+          <img class="dogs-width" src="images/angus-card.jpg" alt="Dog" onclick="showDogInfo('Angus', 'Breed', '$123.45')">
+          <h3>Angus</h3> <p>Cost to Adopt: $123.45</p> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> <button class= "button-adopt" id="dog7" data-cost="123.45">Adopt</button>  
         </div>
         <div class="grid-item-4">
-            <img src="images/violet-card.jpg" width="200" alt="Dog">
-            <h3>Violet</h3> <p>Cost to Adopt: $123.45</p> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> <a class= "button-adopt" href="checkout.html">Adopt</a>  
+            <img class="dogs-width" src="images/violet-card.jpg" alt="Dog" onclick="showDogInfo('Violet', 'Breed', '$123.45')">
+            <h3>Violet</h3> <p>Cost to Adopt: $123.45</p> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> <button class= "button-adopt" id="dog8" data-cost="123.45">Adopt</button>  
           </div>
       </div>
     </article>
@@ -83,15 +84,15 @@
     </article>
       
     <footer>
-        <img src="images/adoptadog-logo.svg" width="400" alt="Adopt a Dog logo with white dog on left">
+        <img class="footer-logo" src="images/adoptadog-logo.svg" alt="Adopt a Dog logo with white dog on left">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat felis ligula, eget rutrum erat fringilla sed. Donec diam dui, iaculis sed rutrum et, feugiat id turpis.</p>
         <nav>
-            <a class= "important-links" href="home.html">Home</a> /
+            <a class= "important-links" href="index.html">Home</a> /
             <a class= "important-links" href="dogs.html">Dogs</a> /
             <a class= "important-links" href="blog.html">Blog</a> 
         </nav>
           <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
     </footer>
-
+    <script src="./dogsinfo.js" charset="utf-8"></script>
   </body>
 </html>
