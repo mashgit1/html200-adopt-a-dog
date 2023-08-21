@@ -129,7 +129,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 45%;
+      width: 90%;
 		}
     .button-checkout {
 			color: white;
@@ -137,7 +137,7 @@
 			border: 1px solid #a1da05;
 			padding: 10px 30px;
 		}
-    button, input, select, textarea, fieldset {
+    input, select, textarea, fieldset {
       font-family: inherit;
       font-size: 100%;
       margin: 1rem;
@@ -168,6 +168,25 @@
         border-radius: 15px;
         width: 30%;
         padding: 10px 30px;
+    }
+    .dogs-width{
+      width: 100%; 
+      cursor: url(), pointer;
+    }
+    .cart-icon{
+      width: 2.5%;
+    }
+    .logo {
+      width: 23%;
+    }
+    .blog-image{
+      width: 85%;
+    }
+    .footer-logo{
+      width: 35%;
+    }
+    .adopt-checkout{
+      width: 90%;
     }
     
    
