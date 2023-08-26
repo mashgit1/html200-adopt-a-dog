@@ -13,7 +13,7 @@
     color: #6B8E0A;
     display: block;
   }
-  .flexbox-checkout {
+.flexbox-checkout {
     justify-content: flex-end;
     text-align: right;
   }
@@ -21,6 +21,9 @@
     height: 1em;
     background-color:#D3D3D3;
     padding: 1.5em;
+  }
+  .cart-icon{
+    width: 2.5%;
   }
   .nav-links {
     color: #203354;
@@ -46,6 +49,9 @@
   .intro-box{
     justify-content: space-between;
   }
+  .blog-image{
+    width: 60%;
+  }
   .grid-intro {
     display: grid;
     grid-gap: 1em 1em;
@@ -59,50 +65,64 @@
     grid-column: 2;
     grid-row: 1;
   }
+  .blog-container {
+    padding: 10px;
+  }
+  .blog-image-index{
+    width: 25%;
+    padding: 9px;
+    float: left;
+    display: flex;
+  }
+  .aside-container {
+    position: static;
+    float: right;
+  }
 
   .grid-intro {
     grid-template-columns: auto auto auto auto;
     grid-template-rows: auto auto auto auto;
     justify-content: space-evenly;
   }
-  .grid-container {
-    display: grid;
-    grid-gap: 1em 5em;
-  }
-  .grid-item-1 {
-    grid-column: 1;
-    grid-row: 1;
-  }
-  .grid-item-2 {
-    grid-column: 2;
-    grid-row: 1;
-  }
-  .grid-item-3 {
-    grid-column: 3;
-    grid-row: 1;
-  }
-  .grid-item-4 {
-    grid-column: 4;
-    grid-row: 1;
-  }
+
   .grid-container div {
     border: 1px solid  #e7e7e7;
     padding: 1em;
   }
   .grid-container {
-    grid-template-columns: auto auto auto auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto auto auto auto;
     justify-content: space-evenly;
+    grid-gap: 1em 5em;
   }
-  footer {
-    height: 15em;
-    width: 97%;
-    background-color: #5A5A5A;
-    padding: 1em;
-    color: white;
-    text-align: center;
-    display: inline-block;
+  
+  @media screen and (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+      grid-gap: 1em;
+    }
   }
+  
+  @media screen and (min-width: 769px) and (max-width: 992px) {
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1em;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .aside-container {
+      display: none;
+    }
+  }
+  
+  @media screen and (min-width: 769px) and (max-width: 992px) {
+    .aside-container {
+      display: static;
+    }
+  }
+
   .important-links {
     color: white;
   }
@@ -173,14 +193,8 @@
       width: 100%; 
       cursor: url(), pointer;
     }
-    .cart-icon{
-      width: 2.5%;
-    }
     .logo {
       width: 23%;
-    }
-    .blog-image{
-      width: 85%;
     }
     .footer-logo{
       width: 35%;
@@ -188,6 +202,14 @@
     .adopt-checkout{
       width: 90%;
     }
-    
-   
-    
+ 
+  footer {
+    height: 15em;
+    width: 98%;
+    background-color: #5A5A5A;
+    padding: 1em;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+  }
