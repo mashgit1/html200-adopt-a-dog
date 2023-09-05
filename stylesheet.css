@@ -176,29 +176,7 @@
       display: flex;
       justify-content: center;
     }
-    
-    input[type=submit] {
-      width: 30%;
-      color: white;
-			background-color: #a1da05;
-			border: 1px solid #a1da05;
-      display: flex;
-    }
-    input[type=text]:focus{
-      outline: none;
-      width: 30%;
-      padding: 10px 30px;
-    }
-    input[type=email]:focus{ 
-      outline: none;
-      width: 30%;
-      padding: 10px 30px;
-    }
-    input {
-        border-radius: 15px;
-        width: 30%;
-        padding: 10px 30px;
-    }
+
     .dogs-width{
       width: 100%; 
       cursor: url(), pointer;
