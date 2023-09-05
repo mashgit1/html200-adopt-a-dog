@@ -7,8 +7,7 @@
   left: 0;
 }
 .head-box {
-    height: 10em;
-    background-color: #203354;
+    height: 100%;
     padding: 2.5em;
     color: #6B8E0A;
     display: block;
@@ -21,6 +20,17 @@
     height: 1em;
     background-color:#D3D3D3;
     padding: 1.5em;
+  }
+  .main-header{
+    width: 100%;
+    height: 100%;
+    background-image: url('images/header-image.jpg');
+    background-color: #203354;
+    background-size: cover;
+    background-position: center center;
+  }
+  .linear-gradient {
+    background: linear-gradient(to bottom, #203354, #5A5A5A)
   }
   .cart-icon{
     width: 2.5%;
