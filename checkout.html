@@ -29,14 +29,13 @@
         <article class="flexbox-container" id="main-content">
             <h2 class>Checkout</h2>
 
-        <form method="GET" id="#main-content">
-            <label>Name: 
-                <input type="text" name="applicantName">
-            </label>
+         <form id="checkout-form">
+            <label for="full-name">Name:</label>
+            <input id="full-name">
+        
 
-            <label>Email Address: 
-                <input type="email" name="ApplicantEmail">
-            </label>
+            <label for="email">Email Address:</label>
+            <input id="email">
 
             <label for="street">Street Address</label>
                 <input id="street" type="text" name="applicantStreet">
@@ -44,8 +43,8 @@
             <label for="city">City</label>
                 <input id="city" type="text" name="applicantCity">
 
-                <label>State
-                    <select name="applicantState">
+                <label for="state">State</label>
+                    <select id="state">
                             <option value="AL">Alabama</option>
                             <option value="AK">Alaska</option>
                             <option value="AZ">Arizona</option>
@@ -98,28 +97,24 @@
                             <option value="WI">Wisconsin</option>
                             <option value="WY">Wyoming</option>
                         </select>
-                </label>
 
             <label for="zipcode">Zip Code</label>
-                <input id="zipcode" type="text" name="applicantzipcode">
+                <input id="zip" type="text" name="applicantzipcode">
 
                       <fieldset> 
                         <legend>First Time Adopter?</legend>          
-                        <label>Yes
-                            <input type="radio" name="special" value="yes">
-                        </label>
-                        <label>No
-                            <input type="radio" name="special" value="no">
-                        </label>
+                        <label>Yes</label>
+                            <input type="radio" name="first" value="yes">
+                        <label>No</label>
+                            <input type="radio" name="first" value="no">
                         </fieldset> 
     
-                <label>Pickup Location
-                    <select name="pickuplocation">
+                <label for="location">Pickup Location</label>
+                    <select id="location">
                             <option value="downtown">Downtown</option>
                             <option value="south">South</option>
                             <option value="north">North</option>
                         </select>
-                    </label>
                  
                     <fieldset> 
                         <legend>Dogs Adopted</legend>          
@@ -147,7 +142,7 @@
 
                         <p>Total Adoption Cost</p>
 
-            <input type="submit">
+            <button type="submit">Submit</button>
 
         </form>
 
@@ -163,6 +158,6 @@
         </nav>
           <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
     </footer>
-    
+    <script src="./dogsinfo.js" charset="utf-8"></script>
   </body>
 </html>
