@@ -1,0 +1,34 @@
+User Personas
+
+Name: Sophie Jones
+Gender: Female
+Age: 25
+Job: Works at a nonprofit doing fundraising
+Level of Education: Bachelors degree in marketing
+Hobbies: Enjoys hiking, camping, and traveling
+User needs: Sophie lives in Seattle and has fostered multiple dogs over the years from shelters and friends. She had a dog growing up and is looking to get a puppy of her own. She enjoys the outdoors and wants to know more about others experiences taking their dogs with them when traveling. She lives alone and wants a puppy that will be friendly but not needy. 
+Devices: Android, Windows PC
+Web Browsers: Chrome and Firefox
+Technology Habits: Sophie is pretty comfortable with various forms of technology and uses her phone when looking up most things. She works mostly in person, but tends to have her phone with her most times. When looking up the site, she will be using her phone to see all dogs available. 
+User Motivation: Sophie heard about Adopt a Dog services from a friend and also found the website when looking for adoption agencies on Google. She wants to adopt a friendly puppy within her budget and to find a community that can help support and provide resources for her first time owning a pet herself. 
+
+Name: Oliver Murphy 
+Gender: Male
+Age: 32
+Job: Works in IT at Amazon 
+Level of Education: Bachelors degree in computer science 
+Hobbies: Enjoys reading, rock climbing, hiking 
+User needs: Oliver lives in Lynnwood, WA with a roommate and has a 3 year old dog. His family lives nearby and he is the oldest of 3 siblings. He has wanted to get multiple dogs and is looking to find a low maintenance dog that will get along with his dog. He enjoys activities both indoors and outdoors and wants to make sure that he finds that right dog that he can add to his home. 
+Devices: Android, Windows PC, Mac 
+Web Browsers: Chrome and Firefox
+Technology Habits: Oliver works remotely and is very comfortable with technology. He uses his laptop for most things that he’s looking up but is also comfortable using his phone. He tends to avoid devices when he’s off of work and likes to spend time outside after work. 
+User Motivation: Oliver came across Adopt a Dog services when looking online for options available. He doesn’t mind the dog’s age and his main goal is to make sure it’s the right dog. Most of his friends own multiple dogs so his dog is used to being around other dogs frequently. 
+
+Testing 
+
+Website tested on mobile on iPhone, Pixel, Samsung, and iPad Mini. Site is responsive and correctly showcases dog columns. 
+
+Website tested on desktop on Chrome, Edge, and Firefox with expected results presented. 
+
+Tested with Google Chrome Dev Tools and screen size was maneuvered to confirm page and image responsiveness. I changed size dimensions from 30% up to 150% to confirm that all images and layout are correctly working. 
+CSS incorporated is working and column sizes for dog boxes on mobile and tablets are changing correctly. 
