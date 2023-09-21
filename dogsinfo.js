@@ -1,64 +1,64 @@
+$(".grid-item").hover(function(){
+  $(this).css("background-color", "#e7e7e7");
+  }, function(){
+  $(this).css("background-color", "white");
+});
+
 function showDogInfo(name, breed, fees) {
   alert(`Dog Information:\nName: ${name}\nBreed: ${breed}\nAdoption Fees: ${fees}`);
 }
 
-let totalCost = 0;
-
-function updateTotalCost() {
-  alert("Total Cost: $" + totalCost);
-}
+$(document).ready(function() {
+  let totalCost = 0;
 
 
-for (let i = 1; i <= 12; i++) {
-  const dogElement = document.getElementById(`dog${i}`);
-  if (dogElement) {
-    dogElement.addEventListener('click', function() {
-      const cost = parseFloat(this.getAttribute('data-cost'));
+  function updateTotalCost() {
+      alert("Total Cost: $" + totalCost.toFixed(2));
+  }
+
+  
+  $('.button-adopt').click(function() {
+
+    
+      const cost = parseFloat($(this).data('cost'));
+
       totalCost += cost;
+
       updateTotalCost();
-    });
+  });
+});
+
+$('#checkout-form').submit(function(event) {
+  event.preventDefault();
+
+  const fullName = $('#full-name').val();
+  const email = $('#email').val();
+  const street = $('#street').val();
+  const city = $('#city').val();
+  const state = $('#state').val();
+  const zip = $('#zip').val();
+  const firstTimeAdopter = $('input[name="first"]:checked').val();
+  const location = $('#location').val();
+  const adoptedDog = $('input[name="special"]:checked').val();
+
+  console.log(`Name: ${fullName}`);
+  console.log(`Email Address: ${email}`);
+  console.log(`Street Address: ${street}`);
+  console.log(`City: ${city}`);
+  console.log(`State: ${state}`);
+  console.log(`Zip Code: ${zip}`);
+  
+  if (firstTimeAdopter) {
+    console.log(`First Time Adopter: ${firstTimeAdopter}`);
   }
-}
+  
+  console.log(`Pickup Location: ${location}`);
 
-document.addEventListener('DOMContentLoaded', function() {
-  const form = document.getElementById('checkout-form');
-
-  if (form) {
-    form.addEventListener('submit', function(event) {
-      event.preventDefault();
-
-      const fullNameElement = document.getElementById('full-name');
-      const emailElement = document.getElementById('email');
-      const streetElement = document.getElementById('street');
-      const cityElement = document.getElementById('city');
-      const stateElement = document.getElementById('state');
-      const zipElement = document.getElementById('zip');
-      const firstTimeAdopterElement = document.querySelector('input[name="first"]:checked');
-      const locationElement = document.getElementById('location');
-      const adoptedDogElement = document.querySelector('input[name="special"]:checked');
-
-      if (fullNameElement && emailElement && streetElement && cityElement && stateElement && zipElement) {
-        console.log(`Name: ${fullNameElement.value}`);
-        console.log(`Email Address: ${emailElement.value}`);
-        console.log(`Street Address: ${streetElement.value}`);
-        console.log(`City: ${cityElement.value}`);
-        console.log(`State: ${stateElement.value}`);
-        console.log(`Zip Code: ${zipElement.value}`);
-        
-        if (firstTimeAdopterElement) {
-          console.log(`First Time Adopter: ${firstTimeAdopterElement.value}`);
-        }
-        
-        console.log(`Pickup Location: ${locationElement.value}`);
-
-        if (adoptedDogElement) {
-          console.log(`Adopted Dog: ${adoptedDogElement.value}`);
-        }
-
-        alert('Thank you. The form information has been received');
-      }
-    });
+  if (adoptedDog) {
+    console.log(`Adopted Dog: ${adoptedDog}`);
   }
+
+  alert('Thank you. The form information has been received');
 });
 
 const blogPosts = [
